@@ -25,7 +25,7 @@ title: Home
   {% endfor %}
 </ul>
 
-{% assign doclist = site.static_files | sort: 'title'  %}
+{% assign doclist = site.static_files %}
 {% for doc in doclist %}
   - [{{ doc.name }}]({{ site.baseurl }}{{ doc.url }})
 {% endfor %}
