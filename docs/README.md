@@ -1,2 +1,5 @@
-# github pages demo
+---
+layout: home
+---
+#github pages demo
 demodemo
