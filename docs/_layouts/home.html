@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 <h1>Latest Posts</h1>
@@ -14,3 +14,11 @@ title: Home
   {% endfor %}
 </ul>
 
+
+
+{% assign doclist = site.static_files | sort: 'url'  %}
+  {% for doc in doclist %}
+    {& if doc.url contains 'contents/' &}
+-     [{{ doc.name }}]({{ site.baseurl }}{{ doc.url }})
+    {& endif &}
+  {% endfor %}
