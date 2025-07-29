@@ -1,6 +1,7 @@
 ---
 layout: none
 title: Contents
+permalink: contents
 ---
 
 {% assign doclist = site.static_files | sort: 'url'  %}
