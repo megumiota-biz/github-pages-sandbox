@@ -19,7 +19,7 @@ title: Home
   {% for post in site.pages %}
     <li>
       {{ post.date | date: "%Y-%m-%d" }}
-      <h2><a href="{{ doc.url }}">{{ post.title }}</a> / slug: {{ doc.slug}} / path: {{ doc.path }} / name: {{doc.name }}</h2>
+      <h2><a href="{{ site.url }}{{ doc.url }}">{{ post.title }}</a> / slug: {{ doc.slug }} / path: {{ doc.path }} / name: {{ doc.name }} / dir: {{ doc.dir }}</h2>
       {{ post.excerpt }}
     </li>
   {% endfor %}
