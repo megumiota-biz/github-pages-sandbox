@@ -25,9 +25,7 @@ title: Home
   {% endfor %}
 </ul>
 
-{% assign doclist = site.static_files | sort: 'url'  %}
-  {% for doc in doclist %}
-    {& if doc.url contains 'contents/' &}
--     [{{ doc.name }}]({{ site.baseurl }}{{ doc.url }})
-    {& endif &}
-  {% endfor %}
+{% assign doclist = site.static_files | sort: 'title'  %}
+{% for doc in doclist %}
+  - [{{ doc.name }}]({{ site.baseurl }}{{ doc.url }})
+{% endfor %}
