@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "DEMO"
 permalink: /demo
 ---
@@ -9,3 +9,6 @@ permalink: /demo
 | aaa | bbb |
 | -- | -- |
 | hoge1 | hoge2 |
+
+- aaaaa
+- bbbbb

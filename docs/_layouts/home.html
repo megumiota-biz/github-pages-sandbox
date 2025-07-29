@@ -14,18 +14,26 @@ title: Home
   {% endfor %}
 </ul>
 
+---
 
+<h1>Pages</h1>
 <ul>
-  {% for post in site.pages %}
+  {% for page in site.pages %}
     <li>
-      {{ post.date | date: "%Y-%m-%d" }}
-      <h2><a href="{{ site.url }}{{ doc.url }}">{{ post.title }}</a> / slug: {{ doc.slug }} / path: {{ doc.path }} / name: {{ doc.name }} / dir: {{ doc.dir }} / permalink: {{ doc.permalink }} </h2>
-      {{ post.excerpt }}
+      {{ page.date }}
+      <h2><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h2>
+      <p>url: {{ site.url }}{{ page.url }}</p>
+      <p>slug: {{ page.slug }} / path: {{ page.path }} / name: {{ page.name }} / dir: {{ page.dir }} / permalink: {{ page.permalink }}</p>
+      {{ page.excerpt }}
     </li>
   {% endfor %}
 </ul>
 
-{% assign doclist = site.static_files %}
-{% for doc in doclist %}
-  - [{{ doc.name }}]({{ site.baseurl }}{{ doc.url }})
-{% endfor %}
+
+hoge
+    {% for section in site.data.docs %}
+    <h4>{{ section.title }}</h4>
+    {% include docs_ul.html items=section.docs %}
+    {% endfor %}
+
+{{ content}}
