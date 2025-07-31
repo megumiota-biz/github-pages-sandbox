@@ -2,7 +2,7 @@ repository: megumiota-biz/github-pages-sandbox
 #theme: just-the-docs
 # remote_theme: just-the-docs/just-the-doc
 # remote_theme: just-the-docs
-remote_theme: just-the-docs/just-the-docs@v0.5.2
+remote_theme: just-the-docs/just-the-docs@v0.10.1
 
 # 全てのmdファイルにdefaultのレイアウト設定を追加
 defaults:
