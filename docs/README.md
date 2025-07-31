@@ -2,6 +2,7 @@
 layout: default
 title: "HOME"
 permalink: /
+nav_exclude: true
 ---
 
 # Pages

@@ -5,9 +5,9 @@ parent: "DIR2"
 
 # dir2-demo1.mdというファイル名です
 
-| aaa | bbb |
-| -- | -- |
-| hoge1 | hoge2 |
+| aaa | bbb | ccc | ddd | eee |
+| -- | -- | -- | -- | -- |
+| hoge1 | hoge2 | hoge2 | hoge2 | hoge2 |
 
 - aaaaa
 - bbbbb
