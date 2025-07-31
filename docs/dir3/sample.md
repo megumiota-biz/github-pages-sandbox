@@ -1,7 +1,6 @@
 ---
-layout: default
 title: "sample"
-permalink: /dir3/sample
+parent: "DIR3"
 ---
 
 # sample.mdというファイル名です
@@ -23,4 +22,17 @@ SELECT
   id
 FROM final
 WHERE id = 1
+```
+## 簡易ER図
+```mermaid
+erDiagram
+    HOGE {
+        INTEGER hoge_id
+    }
+
+    FUGA {
+        INTEGER hoge_id
+        STRING fuga_name
+    }
+    HOGE ||--|| FUGA : "hoge_id"
 ```

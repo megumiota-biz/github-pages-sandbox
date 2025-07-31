@@ -1,7 +1,6 @@
 ---
-layout: default
 title: "DIR2 - DEMO 2"
-permalink: /dir2/dir2-demo2
+parent: "DIR2"
 ---
 
 ## dir2-demo2.mdというファイル名です

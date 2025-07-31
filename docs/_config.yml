@@ -1,0 +1,22 @@
+repository: megumiota-biz/github-pages-sandbox
+theme: just-the-docs
+
+# 全てのmdファイルにdefaultのレイアウト設定を追加
+defaults:
+  - scope:
+      path: "**/*.md"
+    values:
+      layout: "default"
+
+collections:
+  tests:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  collections:
+    tests:
+      name: Tests
+
+mermaid:
+  version: "9.1.3"
