@@ -1,6 +1,22 @@
 ---
 ---
 
-body {
-  background: pink!important;
-}
+// body {
+//   background: pink!important;
+// }
+
+// @media (min-width: 66.5rem) {
+//   .side-bar {
+//     width: calc((100% - 96.5rem) / 2 + 16.5rem);
+//   }
+//   .side-bar + .main {
+//     margin-left: Max(16.5rem, calc((100% - 96.5rem) / 2 + 16.5rem));
+//   }
+// }
+
+
+// @media (min-width: 50rem) {
+//   .main {
+//     max-width: 80rem;
+//   }
+// }
