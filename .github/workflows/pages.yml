@@ -17,15 +17,29 @@ concurrency:
 
 jobs:
   build:
+    environment: github-pages
     runs-on: ubuntu-latest
+
     steps:
-      - name: Build with Jekyll
-        uses: noraworld/jekyll-build-pages@main
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby & Bundler
+        uses: ruby/setup-ruby@v1
         with:
-          use_ruby_version: false
-          use_gemfile: false
-          ref: main
-          source: "docs"
+          ruby-version: '3.4.1'
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Upload static files as artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site # Jekyllの出力ディレクトリ
 
   deploy:
     needs: build
