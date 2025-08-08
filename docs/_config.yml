@@ -4,6 +4,9 @@ theme: just-the-docs
 # remote_theme: just-the-docs
 # remote_theme: just-the-docs/just-the-docs@v0.10.1
 
+#path
+baseurl: "/github-pages-sandbox/"
+
 # 全てのmdファイルにdefaultのレイアウト設定を追加
 defaults:
   - scope:
