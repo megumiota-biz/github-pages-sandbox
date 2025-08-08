@@ -32,9 +32,11 @@ jobs:
 
       - name: Install dependencies
         run: bundle install
+        working-directory: ./docs/
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
+        working-directory: ./docs/
 
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@v3
